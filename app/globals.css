@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Ensure Tailwind scans these paths for class names */
+@source "./**/*.tsx";
+@source "../components/**/*.tsx";
+
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
