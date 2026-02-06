@@ -1,0 +1,1 @@
+ALTER TABLE "conversation" RENAME COLUMN "chabot_id" TO "chatbot_id";
