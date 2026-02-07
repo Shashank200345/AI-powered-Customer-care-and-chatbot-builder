@@ -74,7 +74,35 @@ const ConversationPage = () => {
  },[currentMessages, isLoadingMessages])
 
  const handleReplySend = async () => {
+    if(!replyContent.trim() || !selectedId) return;
+    setIsSending(true);
+    try {
+      const res = await fetch(`/api/conversations/${selectedId}/reply`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({content: replyContent}),
+      })
+      if(res.ok) {
+        const newMsg: Message = {
+          id: crypto.randomUUID(),
+          role: "assistant",
+          content: replyContent,
+          created_at: new Date().toISOString(),
+        }
+        setCurrentMessages((prev) => [...prev, newMsg]);
+        setReplyContent("");
 
+        setConversations((prev) => 
+          prev.map((c) => c.id === selectedId ? {...c, lastMessage: replyContent, time: "Just now"}: c)
+        )
+      }
+    } catch (error) {
+      console.error("Failed to send reply:", error);
+    } finally {
+      setIsSending(false);
+    }
  }
 
  const handleKeyDown = (e: React.KeyboardEvent) => {
