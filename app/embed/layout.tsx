@@ -1,6 +1,7 @@
-'use client'
 
-import { useEffect } from "react";
+
+import React from 'react'
+export const dynamic = 'force-dynamic'
 
 const EmbedLayout = ({children}: {children: React.ReactNode}) => {
   return (
