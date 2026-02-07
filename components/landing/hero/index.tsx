@@ -47,7 +47,7 @@ const Hero = () => {
                               <div className='flex items-center gap-2'>
                                   <div className='w-2 h-2 rounded-full bg-emerald-500 animate-pulse'/>
                                   <span className='text-sm font-medium text-zinc-300'>
-                                          OneMinute Inc.
+                                          BotForge AI Inc.
                                     </span>
                               </div>   
                           </div>
@@ -83,7 +83,7 @@ const Hero = () => {
                                         </div>
 
                                         <div className='p-4 rounded-2xl text-sm leading-relaxed shadow-sm bg-zinc-900 text-white rounded-tr-sm'>
-                                            I need some information about oneminute stack.
+                                            I need some information about BotForge AI.
                                         </div>
                                     </div>
                                 </div>
@@ -98,9 +98,9 @@ const Hero = () => {
                                             className='w-full h-full object-cover'/>
                                         </div>
                                         <div className='p-4 rounded-2xl text-sm leading-relaxed shadow-sm bg-white text-zinc-900 rounded-tl-sm'>
-                                            OneMinute stack is an integrated ecosystem designed to 
+                                            BotForge AI is an integrated ecosystem designed to 
                                             enhance developer efficiency. It includes tools like 
-                                            OneMinute Logs for real-time monitoring.  
+                                            BotForge AI Logs for real-time monitoring.  
                                         </div>
                                     </div>
                                  </div>
