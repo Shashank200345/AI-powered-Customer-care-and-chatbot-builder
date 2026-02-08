@@ -44,7 +44,7 @@ const Sidebar = () => {
                 <div className='w-2.5 h-2.5 bg-black rounded-[1px]'></div>
             </div>
             <span className='text-sm font-medium tracking-tight text-white/90'>
-                One Minute Support
+                BotForge AI
             </span>
           </Link>
           </div>

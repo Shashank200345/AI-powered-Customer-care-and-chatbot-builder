@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Sidebar from "@/components/dashboard/sidebar";
 
 export const metadata = {
-   title: "Dashboard - One Minute Support",
+   title: "Dashboard - BotForge AI",
    description: "Instatntly resolve customer questions with an assistant that reads your docs and speaks with empathy."
 }
 

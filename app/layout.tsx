@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "BotForge ",
+  title: "BotForge AI",
 
   description:
     "Instantly resolve customer questions with an assistant that reads your docs and speaks with empathy.",
