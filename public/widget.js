@@ -54,9 +54,9 @@
                 }
             })
          }).catch(function (err) {
-            console.error("[OneMinuteSupport] Failed to load widget", err);
+            console.error("[BotForgeAI] Failed to load widget", err);
          })
     } catch (error) {
-        console.error("[OneMinuteSupport] Failed to load widget", error);
+        console.error("[BotForgeAI] Failed to load widget", error);
     }
 })()
