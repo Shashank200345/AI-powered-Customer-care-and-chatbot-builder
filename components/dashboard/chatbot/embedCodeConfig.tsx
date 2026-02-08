@@ -4,12 +4,14 @@ import { AlertCircle, Check, Code, Copy } from 'lucide-react';
 import React, { useState } from 'react'
 
 
+const baseUrl = process.env.NEXT_PUBLIC_URI || 'http://localhost:3000';
+
 const EmbedCodeConfig = ({chatbotId}: {chatbotId : string | undefined}) => {
     const [copied, setCopied] = useState(false);
 
     const handleCopycode = () => {
         setCopied(true);
-        navigator.clipboard.writeText(`<script src="http://localhost:3000/widget.js" data-id="${chatbotId}" defer></script>`);
+        navigator.clipboard.writeText(`<script src="${baseUrl}/widget.js" data-id="${chatbotId}" defer></script>`);
         setTimeout(() => setCopied(false), 2000);
     }
     return (
@@ -25,9 +27,7 @@ const EmbedCodeConfig = ({chatbotId}: {chatbotId : string | undefined}) => {
                 <div className='relative group'>
                     <div className='bg-[#050509] border border-white/10 rounded-lg p-3 overflow-hidden'>
                         <code className='text-[10px] text-zinc-400 font-mono block overflow-x-auto'>
-                            {`<script src="http://localhost:3000/widget.js" data-id="${
-                                chatbotId || "..."
-                            }" \n defer>\n</script>`}
+                            {`<script src="${baseUrl}/widget.js" data-id="${chatbotId || "..."}" \n defer>\n</script>`}
 
                         </code>
                         <Button size="icon" variant="secondary" className='absolute top-0 right-2 h-6 w-6 bg-white/10 hover:bg-white/20 text-white border-none' onClick={handleCopycode}>

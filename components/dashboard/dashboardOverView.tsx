@@ -261,7 +261,7 @@ const DashboardOverView = () => {
                         <div className="relative group overflow-hidden rounded-lg">
                             <pre className="bg-[#050509] p-4 rounded-lg text-xs text-zinc-400 font-mono block max-w-full overflow-hidden">
                                 <code className="text-[10px] text-zinc-400 font-mono whitespace-pre-wrap break-all">
-                                    {`<script src="http://localhost:3000/widget.js" data-id="${data?.botId || "..."}" defer></script>`}
+                                    {`<script src="${process.env.NEXT_PUBLIC_URI || 'http://localhost:3000'}/widget.js" data-id="${data?.botId || "..."}" defer></script>`}
                                 </code>
                             </pre>
                             <Button variant="ghost" size="icon" className="absolute top-2 right-2 h-7 w-7 bg-white/10 hover:bg-white/20 text-white border-none" onClick={handleCopy}>

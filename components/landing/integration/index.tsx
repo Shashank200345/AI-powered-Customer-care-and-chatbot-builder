@@ -57,7 +57,7 @@ const Integration = () => {
                         </div>
                         <div className='pl-4'>
                             <span className='text-indigo-400'>src</span>
-                            <span className='text-emerald-400'>&quot;https://botforgeai.com/init.js&quot;</span>
+                            <span className='text-emerald-400'>&quot;{process.env.NEXT_PUBLIC_URI || 'http://localhost:3000'}/widget.js&quot;</span>
                         </div>
                         <div className='pl-4'>
                             <span className='text-indigo-400'>data-id</span>
