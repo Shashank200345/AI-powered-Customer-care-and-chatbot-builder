@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className='w-5 h-5 bg-white rounded-sm flex items-center justify-center'> 
                 <div className='w-2.5 h-2.5 bg-black rounded-[1px]'></div>
                 </div>
-                    <span className='text-sm font-semibold tracking-tight text-white'>One Minute Support</span>
+                    <span className='text-sm font-semibold tracking-tight text-white'>BotForge AI</span>
                 </Link>
             </div>
             <div className='flex gap-8 text-sm text-zinc-600 font-light'>
