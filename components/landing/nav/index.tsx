@@ -15,7 +15,7 @@ const Navbar = async () => {
             <div className='w-5 h-5 bg-white rounded-sm flex items-center justify-center'> 
               <div className='w-2.5 h-2.5 bg-black rounded-[1px]'></div>
         </div>
-        <span className='text-base font-semibold tracking-tight text-white/90 font-inter'>One Minute Support</span>
+        <span className='text-base font-semibold tracking-tight text-white/90 font-inter'>BotForge AI</span>
         </Link>
 
         <div className='hidden md:flex items-center gap-8 text-sm font-light text-zinc-400'>

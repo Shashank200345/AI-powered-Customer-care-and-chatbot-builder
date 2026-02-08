@@ -50,14 +50,14 @@ const Integration = () => {
 
                     <div className='font-mono text-xs md:text-sm leading-7 text-zinc-400'>
                         <div className='text-zinc-600'>
-                            &lt;!-- OneMinute Support --&gt;
+                            &lt;!-- BotForge AI --&gt;
                         </div>
                         <div>
                             &lt;<span className='text-pink-400'>script</span>
                         </div>
                         <div className='pl-4'>
                             <span className='text-indigo-400'>src</span>
-                            <span className='text-emerald-400'>&quot;https://oneminutesupport.com/init.js&quot;</span>
+                            <span className='text-emerald-400'>&quot;https://botforgeai.com/init.js&quot;</span>
                         </div>
                         <div className='pl-4'>
                             <span className='text-indigo-400'>data-id</span>
